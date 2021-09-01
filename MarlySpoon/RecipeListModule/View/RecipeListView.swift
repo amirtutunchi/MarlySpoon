@@ -27,9 +27,28 @@ struct RecipeListView: View {
             Text("All Recipes")
               .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
               .font(.title)
-            ForEach(presenter.recipes) { recipe in
-              presenter.linkBuilder(for: recipe) {
-                RecipeCellView(recipe: recipe)
+            if presenter.errorState {
+              VStack(spacing: 42) {
+                Text("Sorry an error has been occurred. please check your Internet connection")
+                  .foregroundColor(Color.gray)
+                  .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                  .font(.body)
+                Spacer()
+                Button(action: {
+                  presenter.loadData()
+                }, label: {
+                  Text(" Retry ")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .background(Color("purpleColor"))
+                    .foregroundColor(.white)
+                    .clipShape(Capsule())
+                })
+              }
+            } else {
+              ForEach(presenter.recipes) { recipe in
+                presenter.linkBuilder(for: recipe) {
+                  RecipeCellView(recipe: recipe)
+                }
               }
             }
           }

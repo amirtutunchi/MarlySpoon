@@ -12,15 +12,26 @@ import SwiftUI
 class RecipeListPresenter: ObservableObject {
   let interactor: RecipeListInteractor
   @Published var recipes: [Recipe] = []
+  @Published var errorState = false
   private var cancellables = Set<AnyCancellable>()
   private let router = RecipeListRouter()
   init(interactor: RecipeListInteractor) {
     self.interactor = interactor
+    loadData()
+  }
+  func loadData() {
     interactor.getAllRecipes()
       .receive(on: RunLoop.main)
-      .sink { err in
-        print(err)
+      .sink { [weak self] failure in
+        switch failure {
+        case .failure(let error):
+          print(error)
+          self?.errorState = true
+        case .finished:
+          self?.errorState = false
+        }
       } receiveValue: { [weak self] allRecipes in
+        self?.errorState = false
         self?.recipes = allRecipes
       }
       .store(in: &cancellables)
