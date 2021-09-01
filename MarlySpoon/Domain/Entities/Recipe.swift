@@ -19,6 +19,16 @@ public final class Recipe: EntryDecodable {
   public var chef: Chef?
   public var photo: Asset?
   public var tags: [Tag]?
+  public init(title: String, description: String, chef: Chef, tags: [Tag]) {
+    self.title = title
+    self.description = description
+    self.chef = chef
+    self.tags = tags
+    self.id = UUID().uuidString
+    self.localeCode = "en-US"
+    self.createdAt = Date()
+    self.updatedAt = Date()
+  }
   public required init(from decoder: Decoder) throws {
     let sys = try decoder.sys()
     id = sys.id

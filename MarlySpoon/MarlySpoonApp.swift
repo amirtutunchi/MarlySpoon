@@ -11,7 +11,7 @@ import SwiftUI
 struct MarlySpoonApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      RecipeListModuleBuilder.build()
     }
   }
 }

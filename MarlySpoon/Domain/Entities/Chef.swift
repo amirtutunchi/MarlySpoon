@@ -25,6 +25,13 @@ public final class Chef: EntryDecodable, FieldKeysQueryable {
     let fields = try decoder.contentfulFieldsContainer(keyedBy: Chef.FieldKeys.self)
     self.name = try fields.decodeIfPresent(String.self, forKey: .name)
   }
+  public init(name: String) {
+    self.name = name
+    self.id = UUID().uuidString
+    self.localeCode = "en-US"
+    self.createdAt = Date()
+    self.updatedAt = Date()
+  }
   public enum FieldKeys: String, CodingKey {
     case name
   }
