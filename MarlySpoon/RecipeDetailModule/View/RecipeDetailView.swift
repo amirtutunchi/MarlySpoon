@@ -61,8 +61,6 @@ struct RecipeDetailView_Previews: PreviewProvider {
       description: "this food is one of the best food in world",
       chef: chef,
       tags: [])
-    let interactor = RecipeDetailInteractor.init(recipe: recipe)
-    let presenter = RecipeDetailPresenter.init(interactor: interactor)
-    RecipeDetailView(presenter: presenter)
+    RecipeDetailModuleBuilder.build(recipe: recipe)
   }
 }

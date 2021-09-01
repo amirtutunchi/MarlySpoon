@@ -65,10 +65,6 @@ struct RecipeListView: View {
 
 struct RecipeListView_Previews: PreviewProvider {
   static var previews: some View {
-    let service = RemoteRecipeServices()
-    let interactor = RecipeListInteractor.init(recipeRepository: service)
-    let presenter = RecipeListPresenter.init(interactor: interactor)
-    RecipeListView(presenter: presenter)
-      .preferredColorScheme(.dark)
+    RecipeListModuleBuilder.build()
   }
 }
