@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		0169A0A626DFDD58006039A4 /* MarlySpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0A526DFDD58006039A4 /* MarlySpoonTests.swift */; };
 		0169A0B126DFDD58006039A4 /* MarlySpoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */; };
 		016B221026DFDE3800ED9C81 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B220F26DFDE3800ED9C81 /* Recipe.swift */; };
+		016B221D26DFE05300ED9C81 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 016B221C26DFE05300ED9C81 /* Kingfisher */; };
+		016B222326DFE39200ED9C81 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 016B222226DFE39200ED9C81 /* Contentful */; };
+		016B222826DFE42300ED9C81 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B222726DFE42300ED9C81 /* Chef.swift */; };
+		016B222D26DFE46300ED9C81 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B222C26DFE46300ED9C81 /* Tag.swift */; };
+		016B223226DFE4BA00ED9C81 /* RecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B223126DFE4BA00ED9C81 /* RecipeRepository.swift */; };
+		016B223726DFE50500ED9C81 /* RemoteRecipeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B223626DFE50500ED9C81 /* RemoteRecipeServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,10 @@
 		0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarlySpoonUITests.swift; sourceTree = "<group>"; };
 		0169A0B226DFDD58006039A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016B220F26DFDE3800ED9C81 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		016B222726DFE42300ED9C81 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		016B222C26DFE46300ED9C81 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		016B223126DFE4BA00ED9C81 /* RecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepository.swift; sourceTree = "<group>"; };
+		016B223626DFE50500ED9C81 /* RemoteRecipeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016B222326DFE39200ED9C81 /* Contentful in Frameworks */,
+				016B221D26DFE05300ED9C81 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +109,7 @@
 		0169A09226DFDD55006039A4 /* MarlySpoon */ = {
 			isa = PBXGroup;
 			children = (
+				016B223B26DFE5EF00ED9C81 /* RecipeListModule */,
 				0169A0C126DFDD75006039A4 /* Domain */,
 				0169A09326DFDD55006039A4 /* MarlySpoonApp.swift */,
 				0169A09526DFDD55006039A4 /* ContentView.swift */,
@@ -146,6 +159,7 @@
 		016B220C26DFDDF700ED9C81 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				016B223626DFE50500ED9C81 /* RemoteRecipeServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +167,7 @@
 		016B220D26DFDE0300ED9C81 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				016B223126DFE4BA00ED9C81 /* RecipeRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -161,8 +176,49 @@
 			isa = PBXGroup;
 			children = (
 				016B220F26DFDE3800ED9C81 /* Recipe.swift */,
+				016B222726DFE42300ED9C81 /* Chef.swift */,
+				016B222C26DFE46300ED9C81 /* Tag.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		016B223B26DFE5EF00ED9C81 /* RecipeListModule */ = {
+			isa = PBXGroup;
+			children = (
+				016B223F26DFE63100ED9C81 /* Presenter */,
+				016B223D26DFE61A00ED9C81 /* Router */,
+				016B223E26DFE62500ED9C81 /* View */,
+				016B223C26DFE61000ED9C81 /* Intractor */,
+			);
+			path = RecipeListModule;
+			sourceTree = "<group>";
+		};
+		016B223C26DFE61000ED9C81 /* Intractor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intractor;
+			sourceTree = "<group>";
+		};
+		016B223D26DFE61A00ED9C81 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		016B223E26DFE62500ED9C81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		016B223F26DFE63100ED9C81 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +231,17 @@
 				0169A08C26DFDD55006039A4 /* Sources */,
 				0169A08D26DFDD55006039A4 /* Frameworks */,
 				0169A08E26DFDD55006039A4 /* Resources */,
+				016B221726DFDF0D00ED9C81 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MarlySpoon;
+			packageProductDependencies = (
+				016B221C26DFE05300ED9C81 /* Kingfisher */,
+				016B222226DFE39200ED9C81 /* Contentful */,
+			);
 			productName = MarlySpoon;
 			productReference = 0169A09026DFDD55006039A4 /* MarlySpoon.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +313,10 @@
 				Base,
 			);
 			mainGroup = 0169A08726DFDD54006039A4;
+			packageReferences = (
+				016B221B26DFE05300ED9C81 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				016B222126DFE39200ED9C81 /* XCRemoteSwiftPackageReference "contentful" */,
+			);
 			productRefGroup = 0169A09126DFDD55006039A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,14 +354,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		016B221726DFDF0D00ED9C81 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0169A08C26DFDD55006039A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016B223726DFE50500ED9C81 /* RemoteRecipeServices.swift in Sources */,
 				016B221026DFDE3800ED9C81 /* Recipe.swift in Sources */,
+				016B223226DFE4BA00ED9C81 /* RecipeRepository.swift in Sources */,
 				0169A09626DFDD55006039A4 /* ContentView.swift in Sources */,
+				016B222D26DFE46300ED9C81 /* Tag.swift in Sources */,
 				0169A09426DFDD55006039A4 /* MarlySpoonApp.swift in Sources */,
+				016B222826DFE42300ED9C81 /* Chef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +706,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		016B221B26DFE05300ED9C81 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		016B222126DFE39200ED9C81 /* XCRemoteSwiftPackageReference "contentful" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		016B221C26DFE05300ED9C81 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B221B26DFE05300ED9C81 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		016B222226DFE39200ED9C81 /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016B222126DFE39200ED9C81 /* XCRemoteSwiftPackageReference "contentful" */;
+			productName = Contentful;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0169A08826DFDD54006039A4 /* Project object */;
 }
