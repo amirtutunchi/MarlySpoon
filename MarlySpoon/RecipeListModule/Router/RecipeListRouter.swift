@@ -10,8 +10,6 @@ import SwiftUI
 
 class RecipeListRouter {
   func createRecipeView(for recipe: Recipe) -> some View {
-    let interactor = RecipeDetailInteractor.init(recipe: recipe)
-    let presenter = RecipeDetailPresenter.init(interactor: interactor)
-    return RecipeDetailView(presenter: presenter)
+    return RecipeDetailModuleBuilder.build(recipe: recipe)
   }
 }

@@ -32,6 +32,7 @@
 		016B227A26DFEBF400ED9C81 /* ChefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B227926DFEBF400ED9C81 /* ChefView.swift */; };
 		016B227F26DFEC4400ED9C81 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B227E26DFEC4400ED9C81 /* TagView.swift */; };
 		016B228726DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B228626DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift */; };
+		016B228C26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		016B227926DFEBF400ED9C81 /* ChefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefView.swift; sourceTree = "<group>"; };
 		016B227E26DFEC4400ED9C81 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		016B228626DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListModuleBuilder.swift; sourceTree = "<group>"; };
+		016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				016B225526DFE7F600ED9C81 /* View */,
 				016B225426DFE7EE00ED9C81 /* Interactor */,
 				016B225326DFE7E700ED9C81 /* Presenter */,
+				016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */,
 			);
 			path = RecipeDetailModule;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				016B224E26DFE7AD00ED9C81 /* RecipeListRouter.swift in Sources */,
 				016B228726DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift in Sources */,
 				016B222D26DFE46300ED9C81 /* Tag.swift in Sources */,
+				016B228C26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift in Sources */,
 				016B225C26DFE82E00ED9C81 /* RecipeDetailInteractor.swift in Sources */,
 				016B227526DFEBAA00ED9C81 /* DescriptionView.swift in Sources */,
 				0169A09426DFDD55006039A4 /* MarlySpoonApp.swift in Sources */,
