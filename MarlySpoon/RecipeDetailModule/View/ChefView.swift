@@ -17,6 +17,7 @@ struct ChefView: View {
         .foregroundColor(Color("purpleColor"))
       Text(chef.name ?? "Unknown Chef")
         .font(.headline)
+        .bold()
         .fontWeight(.medium)
         .foregroundColor(Color("textColor"))
       Spacer()
