@@ -13,6 +13,7 @@
 		0169A09B26DFDD57006039A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0169A09A26DFDD57006039A4 /* Preview Assets.xcassets */; };
 		0169A0A626DFDD58006039A4 /* MarlySpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0A526DFDD58006039A4 /* MarlySpoonTests.swift */; };
 		0169A0B126DFDD58006039A4 /* MarlySpoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */; };
+		016B221026DFDE3800ED9C81 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B220F26DFDE3800ED9C81 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		0169A0AC26DFDD58006039A4 /* MarlySpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarlySpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarlySpoonUITests.swift; sourceTree = "<group>"; };
 		0169A0B226DFDD58006039A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016B220F26DFDE3800ED9C81 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		0169A09226DFDD55006039A4 /* MarlySpoon */ = {
 			isa = PBXGroup;
 			children = (
+				0169A0C126DFDD75006039A4 /* Domain */,
 				0169A09326DFDD55006039A4 /* MarlySpoonApp.swift */,
 				0169A09526DFDD55006039A4 /* ContentView.swift */,
 				0169A09726DFDD57006039A4 /* Assets.xcassets */,
@@ -128,6 +131,38 @@
 				0169A0B226DFDD58006039A4 /* Info.plist */,
 			);
 			path = MarlySpoonUITests;
+			sourceTree = "<group>";
+		};
+		0169A0C126DFDD75006039A4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				016B220E26DFDE1500ED9C81 /* Entities */,
+				016B220D26DFDE0300ED9C81 /* Repositories */,
+				016B220C26DFDDF700ED9C81 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		016B220C26DFDDF700ED9C81 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		016B220D26DFDE0300ED9C81 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		016B220E26DFDE1500ED9C81 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				016B220F26DFDE3800ED9C81 /* Recipe.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016B221026DFDE3800ED9C81 /* Recipe.swift in Sources */,
 				0169A09626DFDD55006039A4 /* ContentView.swift in Sources */,
 				0169A09426DFDD55006039A4 /* MarlySpoonApp.swift in Sources */,
 			);
