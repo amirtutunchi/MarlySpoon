@@ -1,0 +1,15 @@
+ query getRecepies{
+  recipeCollection {
+    items {
+      title
+      description
+      photo{
+        url
+      }
+      chef {
+        name
+      }
+    }
+  }
+}
+
