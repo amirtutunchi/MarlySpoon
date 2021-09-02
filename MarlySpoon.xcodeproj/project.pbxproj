@@ -10,8 +10,6 @@
 		0169A09426DFDD55006039A4 /* MarlySpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A09326DFDD55006039A4 /* MarlySpoonApp.swift */; };
 		0169A09826DFDD57006039A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0169A09726DFDD57006039A4 /* Assets.xcassets */; };
 		0169A09B26DFDD57006039A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0169A09A26DFDD57006039A4 /* Preview Assets.xcassets */; };
-		0169A0A626DFDD58006039A4 /* MarlySpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0A526DFDD58006039A4 /* MarlySpoonTests.swift */; };
-		0169A0B126DFDD58006039A4 /* MarlySpoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */; };
 		016B221026DFDE3800ED9C81 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B220F26DFDE3800ED9C81 /* Recipe.swift */; };
 		016B221D26DFE05300ED9C81 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 016B221C26DFE05300ED9C81 /* Kingfisher */; };
 		016B222326DFE39200ED9C81 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 016B222226DFE39200ED9C81 /* Contentful */; };
@@ -33,17 +31,12 @@
 		016B227F26DFEC4400ED9C81 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B227E26DFEC4400ED9C81 /* TagView.swift */; };
 		016B228726DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B228626DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift */; };
 		016B228C26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */; };
+		016B229926E0114A00ED9C81 /* RecipeListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B229826E0114A00ED9C81 /* RecipeListInteractorTests.swift */; };
+		016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0169A0A226DFDD58006039A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0169A08826DFDD54006039A4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0169A08F26DFDD55006039A4;
-			remoteInfo = MarlySpoon;
-		};
-		0169A0AD26DFDD58006039A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0169A08826DFDD54006039A4 /* Project object */;
 			proxyType = 1;
@@ -59,11 +52,7 @@
 		0169A09A26DFDD57006039A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0169A09C26DFDD57006039A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0169A0A126DFDD58006039A4 /* MarlySpoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarlySpoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0169A0A526DFDD58006039A4 /* MarlySpoonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarlySpoonTests.swift; sourceTree = "<group>"; };
 		0169A0A726DFDD58006039A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0169A0AC26DFDD58006039A4 /* MarlySpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarlySpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarlySpoonUITests.swift; sourceTree = "<group>"; };
-		0169A0B226DFDD58006039A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016B220F26DFDE3800ED9C81 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		016B222726DFE42300ED9C81 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
 		016B222C26DFE46300ED9C81 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -83,6 +72,8 @@
 		016B227E26DFEC4400ED9C81 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		016B228626DFEDEB00ED9C81 /* RecipeListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListModuleBuilder.swift; sourceTree = "<group>"; };
 		016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailModuleBuilder.swift; sourceTree = "<group>"; };
+		016B229826E0114A00ED9C81 /* RecipeListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListInteractorTests.swift; sourceTree = "<group>"; };
+		016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +93,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0169A0A926DFDD58006039A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,7 +101,6 @@
 			children = (
 				0169A09226DFDD55006039A4 /* MarlySpoon */,
 				0169A0A426DFDD58006039A4 /* MarlySpoonTests */,
-				0169A0AF26DFDD58006039A4 /* MarlySpoonUITests */,
 				0169A09126DFDD55006039A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +110,6 @@
 			children = (
 				0169A09026DFDD55006039A4 /* MarlySpoon.app */,
 				0169A0A126DFDD58006039A4 /* MarlySpoonTests.xctest */,
-				0169A0AC26DFDD58006039A4 /* MarlySpoonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,19 +139,10 @@
 		0169A0A426DFDD58006039A4 /* MarlySpoonTests */ = {
 			isa = PBXGroup;
 			children = (
-				0169A0A526DFDD58006039A4 /* MarlySpoonTests.swift */,
+				016B229626E0110900ED9C81 /* RecipeListModuleTests */,
 				0169A0A726DFDD58006039A4 /* Info.plist */,
 			);
 			path = MarlySpoonTests;
-			sourceTree = "<group>";
-		};
-		0169A0AF26DFDD58006039A4 /* MarlySpoonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0169A0B026DFDD58006039A4 /* MarlySpoonUITests.swift */,
-				0169A0B226DFDD58006039A4 /* Info.plist */,
-			);
-			path = MarlySpoonUITests;
 			sourceTree = "<group>";
 		};
 		0169A0C126DFDD75006039A4 /* Domain */ = {
@@ -292,6 +265,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		016B229626E0110900ED9C81 /* RecipeListModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				016B229C26E087C000ED9C81 /* PresenterTests */,
+				016B229726E0112000ED9C81 /* IntractorTests */,
+			);
+			path = RecipeListModuleTests;
+			sourceTree = "<group>";
+		};
+		016B229726E0112000ED9C81 /* IntractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				016B229826E0114A00ED9C81 /* RecipeListInteractorTests.swift */,
+			);
+			path = IntractorTests;
+			sourceTree = "<group>";
+		};
+		016B229C26E087C000ED9C81 /* PresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */,
+			);
+			path = PresenterTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,24 +333,6 @@
 			productReference = 0169A0A126DFDD58006039A4 /* MarlySpoonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0169A0AB26DFDD58006039A4 /* MarlySpoonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0169A0BB26DFDD58006039A4 /* Build configuration list for PBXNativeTarget "MarlySpoonUITests" */;
-			buildPhases = (
-				0169A0A826DFDD58006039A4 /* Sources */,
-				0169A0A926DFDD58006039A4 /* Frameworks */,
-				0169A0AA26DFDD58006039A4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0169A0AE26DFDD58006039A4 /* PBXTargetDependency */,
-			);
-			name = MarlySpoonUITests;
-			productName = MarlySpoonUITests;
-			productReference = 0169A0AC26DFDD58006039A4 /* MarlySpoonUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -367,10 +347,7 @@
 					};
 					0169A0A026DFDD58006039A4 = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 0169A08F26DFDD55006039A4;
-					};
-					0169A0AB26DFDD58006039A4 = {
-						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 						TestTargetID = 0169A08F26DFDD55006039A4;
 					};
 				};
@@ -394,7 +371,6 @@
 			targets = (
 				0169A08F26DFDD55006039A4 /* MarlySpoon */,
 				0169A0A026DFDD58006039A4 /* MarlySpoonTests */,
-				0169A0AB26DFDD58006039A4 /* MarlySpoonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -410,13 +386,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0169A09F26DFDD58006039A4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0169A0AA26DFDD58006039A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -478,15 +447,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0169A0A626DFDD58006039A4 /* MarlySpoonTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0169A0A826DFDD58006039A4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0169A0B126DFDD58006039A4 /* MarlySpoonUITests.swift in Sources */,
+				016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */,
+				016B229926E0114A00ED9C81 /* RecipeListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,11 +459,6 @@
 			isa = PBXTargetDependency;
 			target = 0169A08F26DFDD55006039A4 /* MarlySpoon */;
 			targetProxy = 0169A0A226DFDD58006039A4 /* PBXContainerItemProxy */;
-		};
-		0169A0AE26DFDD58006039A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0169A08F26DFDD55006039A4 /* MarlySpoon */;
-			targetProxy = 0169A0AD26DFDD58006039A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -671,6 +628,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WUQEBT7FU5;
 				INFOPLIST_FILE = MarlySpoonTests/Info.plist;
@@ -682,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.amirtutunchi.challenge.MarlySpoonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarlySpoon.app/MarlySpoon";
@@ -693,6 +652,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WUQEBT7FU5;
 				INFOPLIST_FILE = MarlySpoonTests/Info.plist;
@@ -707,46 +667,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarlySpoon.app/MarlySpoon";
-			};
-			name = Release;
-		};
-		0169A0BC26DFDD58006039A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WUQEBT7FU5;
-				INFOPLIST_FILE = MarlySpoonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amirtutunchi.challenge.MarlySpoonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarlySpoon;
-			};
-			name = Debug;
-		};
-		0169A0BD26DFDD58006039A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WUQEBT7FU5;
-				INFOPLIST_FILE = MarlySpoonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amirtutunchi.challenge.MarlySpoonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MarlySpoon;
 			};
 			name = Release;
 		};
@@ -776,15 +696,6 @@
 			buildConfigurations = (
 				0169A0B926DFDD58006039A4 /* Debug */,
 				0169A0BA26DFDD58006039A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0169A0BB26DFDD58006039A4 /* Build configuration list for PBXNativeTarget "MarlySpoonUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0169A0BC26DFDD58006039A4 /* Debug */,
-				0169A0BD26DFDD58006039A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
