@@ -11,7 +11,9 @@ import SwiftUI
 
 class RecipeListPresenter: ObservableObject {
   let interactor: RecipeListInteractor
+  /// this property use for rendering recipes on screen
   @Published var recipes: [Recipe] = []
+  /// if we have error we change this boolean to true and in the view we show nice error text and a retry button
   @Published var errorState = false
   private var cancellables = Set<AnyCancellable>()
   private let router = RecipeListRouter()
@@ -19,6 +21,7 @@ class RecipeListPresenter: ObservableObject {
     self.interactor = interactor
     loadData()
   }
+  /// use this function to command interactor to load data
   func loadData() {
     interactor.getAllRecipes()
       .receive(on: RunLoop.main)
@@ -36,6 +39,11 @@ class RecipeListPresenter: ObservableObject {
       }
       .store(in: &cancellables)
   }
+  /// create navigation link to recipe detail
+  /// - Parameters:
+  ///   - recipe: selected recipe
+  ///   - content: desired view
+  /// - Returns: some view
   func linkBuilder<Content: View>(for recipe: Recipe, @ViewBuilder content: () -> Content) -> some View {
     NavigationLink(
       destination: router.createRecipeView(for: recipe)) {
