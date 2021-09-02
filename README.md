@@ -1,3 +1,4 @@
+[![iOS starter workflow](https://github.com/amirtutunchi/MarlySpoon/actions/workflows/ios.yml/badge.svg)](https://github.com/amirtutunchi/MarlySpoon/actions/workflows/ios.yml)
 # Marley Spoon Challenge
 
 This project is one of the most exciting projects that I work. Because it contains so many cool parts like working with Graphql and Viper and SwiftUI and Combine at the same time
