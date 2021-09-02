@@ -12,6 +12,9 @@ I use viper with Swiftui and Combine framework for doing this challenge. my main
 ## Unit-Tests
 As you can see I tried to write some unit tests but unfortunately test coverage is not high. I try my best in approximately four hours and I continue writing more tests in a different branch in order to go the extra mile.
 
+## CI/CD
+For CI as you can see i used github action to build and run tests when ever anything commit on main branch
+
 ## Conclusion
 Thank you so much for reviewing my code. I really appreciated any suggestion you have regarding code and implementation and overall it was a fun journey 🤝  I never had a chance to work with Graphql before and write a query for it. So when I executed the first query correctly I was so happy and excited about the result and the power it has.
 ## License
