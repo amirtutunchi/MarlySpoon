@@ -22,7 +22,7 @@ class RecipeListPresenter: ObservableObject {
     loadData()
   }
   /// use this function to command interactor to load data
-  func loadData() {
+  func loadData(completion: @escaping () -> Void = {}) {
     interactor.getAllRecipes()
       .receive(on: RunLoop.main)
       .sink { [weak self] failure in
@@ -32,6 +32,7 @@ class RecipeListPresenter: ObservableObject {
           self?.errorState = true
         case .finished:
           self?.errorState = false
+          completion()
         }
       } receiveValue: { [weak self] allRecipes in
         self?.errorState = false
