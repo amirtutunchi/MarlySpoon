@@ -33,6 +33,7 @@
 		016B228C26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */; };
 		016B229926E0114A00ED9C81 /* RecipeListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B229826E0114A00ED9C81 /* RecipeListInteractorTests.swift */; };
 		016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */; };
+		019B8CC626E2418C007DCEB1 /* RecipeListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B8CC526E2418C007DCEB1 /* RecipeListRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		016B228B26DFF94500ED9C81 /* RecipeDetailModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailModuleBuilder.swift; sourceTree = "<group>"; };
 		016B229826E0114A00ED9C81 /* RecipeListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListInteractorTests.swift; sourceTree = "<group>"; };
 		016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenterTests.swift; sourceTree = "<group>"; };
+		019B8CC526E2418C007DCEB1 /* RecipeListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 		016B229626E0110900ED9C81 /* RecipeListModuleTests */ = {
 			isa = PBXGroup;
 			children = (
+				019B8CC426E24151007DCEB1 /* RouterTests */,
 				016B229C26E087C000ED9C81 /* PresenterTests */,
 				016B229726E0112000ED9C81 /* IntractorTests */,
 			);
@@ -288,6 +291,14 @@
 				016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */,
 			);
 			path = PresenterTests;
+			sourceTree = "<group>";
+		};
+		019B8CC426E24151007DCEB1 /* RouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				019B8CC526E2418C007DCEB1 /* RecipeListRouterTests.swift */,
+			);
+			path = RouterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */,
+				019B8CC626E2418C007DCEB1 /* RecipeListRouterTests.swift in Sources */,
 				016B229926E0114A00ED9C81 /* RecipeListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
