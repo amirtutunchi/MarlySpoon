@@ -30,23 +30,9 @@ class RecipeListInteractorTests: XCTestCase {
         }
       } receiveValue: { recipes in
         XCTAssert(recipes.count == 2)
-        XCTAssert(recipes[0].title == "Chicken Grill")
+        XCTAssert(recipes[0].title == MockRecipes.recipe.title)
       }
       .store(in: &cancellables)
   }
 }
 
-struct FakeRemoteRecipeService: RecipeRepository {
-  func getRecipes() -> AnyPublisher<[Recipe], Error> {
-    let chef = Chef.init(name: "John Doe")
-    let recipe = Recipe.init(
-      title: "Chicken Grill",
-      description: "this food is one of the best food in world",
-      chef: chef,
-      tags: [])
-    return Future<[Recipe], Error> { promise in
-      promise( .success([recipe, recipe]))
-    }
-    .eraseToAnyPublisher()
-  }
-}

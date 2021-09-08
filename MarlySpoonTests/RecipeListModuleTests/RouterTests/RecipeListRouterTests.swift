@@ -10,13 +10,7 @@ import XCTest
 class RecipeListRouterTests: XCTestCase {
   func test_CreateRecipeView_InitialCorrectly() {
     let systemUnderTest = RecipeListRouter.init()
-    let chef = Chef.init(name: "John Doe")
-    let recipe = Recipe.init(
-      title: "Chicken Grill",
-      description: "this food is one of the best food in world",
-      chef: chef,
-      tags: [])
-    let recipeDetailView = systemUnderTest.createRecipeView(for: recipe)
+    let recipeDetailView = systemUnderTest.createRecipeView(for: MockRecipes.recipe)
     XCTAssert(recipeDetailView is RecipeDetailView)
   }
 }

@@ -35,6 +35,8 @@
 		016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */; };
 		019B8CC626E2418C007DCEB1 /* RecipeListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B8CC526E2418C007DCEB1 /* RecipeListRouterTests.swift */; };
 		019B8CCE26E24A06007DCEB1 /* RecipeDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B8CCD26E24A06007DCEB1 /* RecipeDetailInteractorTests.swift */; };
+		414EBDDE26E89A26009980D4 /* MockRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EBDDD26E89A26009980D4 /* MockRecipes.swift */; };
+		414EBDE526E89B65009980D4 /* FakeRemoteRecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EBDE426E89B65009980D4 /* FakeRemoteRecipeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		016B229D26E087DA00ED9C81 /* RecipeListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListPresenterTests.swift; sourceTree = "<group>"; };
 		019B8CC526E2418C007DCEB1 /* RecipeListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRouterTests.swift; sourceTree = "<group>"; };
 		019B8CCD26E24A06007DCEB1 /* RecipeDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailInteractorTests.swift; sourceTree = "<group>"; };
+		414EBDDD26E89A26009980D4 /* MockRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipes.swift; sourceTree = "<group>"; };
+		414EBDE426E89B65009980D4 /* FakeRemoteRecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRemoteRecipeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		0169A0A426DFDD58006039A4 /* MarlySpoonTests */ = {
 			isa = PBXGroup;
 			children = (
+				414EBDDB26E89A0B009980D4 /* Domain */,
 				019B8CCB26E249D4007DCEB1 /* RecipeDetailModuleTests */,
 				016B229626E0110900ED9C81 /* RecipeListModuleTests */,
 				0169A0A726DFDD58006039A4 /* Info.plist */,
@@ -320,6 +325,31 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		414EBDDB26E89A0B009980D4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				414EBDE326E89B56009980D4 /* Services */,
+				414EBDDC26E89A14009980D4 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		414EBDDC26E89A14009980D4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				414EBDDD26E89A26009980D4 /* MockRecipes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		414EBDE326E89B56009980D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				414EBDE426E89B65009980D4 /* FakeRemoteRecipeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414EBDE526E89B65009980D4 /* FakeRemoteRecipeService.swift in Sources */,
+				414EBDDE26E89A26009980D4 /* MockRecipes.swift in Sources */,
 				016B229E26E087DA00ED9C81 /* RecipeListPresenterTests.swift in Sources */,
 				019B8CC626E2418C007DCEB1 /* RecipeListRouterTests.swift in Sources */,
 				016B229926E0114A00ED9C81 /* RecipeListInteractorTests.swift in Sources */,

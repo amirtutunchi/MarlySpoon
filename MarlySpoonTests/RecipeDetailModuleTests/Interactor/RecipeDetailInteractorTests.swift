@@ -13,22 +13,14 @@ class RecipeDetailInteractorTests: XCTestCase {
   var recipe: Recipe?
   override func setUpWithError() throws {
     try super.setUpWithError()
-    let chef = Chef.init(name: "John Doe")
-    recipe = Recipe.init(
-      title: "Chicken Grill",
-      description: "this food is one of the best food in world",
-      chef: chef,
-      tags: [])
-    if let recipe = recipe {
-      systemUnderTest = RecipeDetailInteractor.init(recipe: recipe )
-    }
+    systemUnderTest = RecipeDetailInteractor.init(recipe: MockRecipes.recipe )
   }
   override func tearDownWithError() throws {
     try super.tearDownWithError()
     systemUnderTest = nil
   }
   func test_Init_ObjectGetInitializedCorrectly() {
-    XCTAssert(systemUnderTest?.recipe.title == recipe?.title)
-    XCTAssert(systemUnderTest?.recipe.chef?.name == recipe?.chef?.name)
+    XCTAssert(systemUnderTest?.recipe.title == MockRecipes.recipe.title)
+    XCTAssert(systemUnderTest?.recipe.chef?.name == MockRecipes.recipe.chef?.name)
   }
 }
