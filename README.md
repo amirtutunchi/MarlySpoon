@@ -3,9 +3,6 @@
 
 This project is one of the most exciting projects that I work. Because it contains so many cool parts like working with Graphql and Viper and SwiftUI and Combine at the same time
 
-## Disclaimer 🎺🎺
-This project contains two branches the main branch and extramile. The code you find in the main branch is the solution I came across in around 4 hours and because I was excited about this project I want to continue and add more features and most importantly add more tests so I created the extramile branch and I continue my contribution on this branch.
-
 ## Running Project
 I just use SPM so after opening Xcode and opening the project and downloading dependencies you are good to go
 - I am using Swfitlint but I comment out the run script so you don't force to install Swiftlint
