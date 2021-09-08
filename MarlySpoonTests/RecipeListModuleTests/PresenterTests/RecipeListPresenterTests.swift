@@ -26,4 +26,12 @@ class RecipeListPresenterTests: XCTestCase {
     XCTAssertNotNil(sut?.recipes)
     XCTAssertNotNil(sut?.errorState)
   }
+  func test_LoadData_Currectly() {
+    let expectation = XCTestExpectation(description: "Publishes values then finishes")
+    sut?.loadData {
+      expectation.fulfill()
+    }
+    wait(for: [expectation], timeout: 0.5)
+    XCTAssert(sut?.recipes.count == 2)
+  }
 }
